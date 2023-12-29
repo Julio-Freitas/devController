@@ -31,7 +31,7 @@ export function TicketItem({ ticket, customer }: ComponentTicketProps) {
   };
   return (
     <tr
-      className="dark:bg-gray-800 dark:border-gray-700 border-b-2  border-b-slate-200 h-16 last:border-b-0  hover:bg-black duration-300 data-[loading=true]:pointer-events-none data-[loading=true]:bg-slate-500 data-[loading=true]:opacity-30 data-[loading=true]:animate-pulse"
+      className="bg-gray-800 border-gray-700 border-b-2  border-b-slate-200 h-16 last:border-b-0  hover:bg-black duration-300 data-[loading=true]:pointer-events-none data-[loading=true]:bg-slate-500 data-[loading=true]:opacity-30 data-[loading=true]:animate-pulse"
       data-loading={loading}
     >
       <td className="text-left py-2 text-gray-300 pl-2">{ticket.name}</td>
@@ -40,11 +40,11 @@ export function TicketItem({ ticket, customer }: ComponentTicketProps) {
       </td>
       <td className="text-left py-2 text-gray-300 pl-2">
         {ticket.status === "OPEN" ? (
-          <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+          <span className="bg-green-100  text-xs font-medium me-2 px-2.5 py-0.5 rounded  text-green-900">
             Aberto
           </span>
         ) : (
-          <span className="bg-red-900 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+          <span className="text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-red-900 text-white">
             Fechado
           </span>
         )}
