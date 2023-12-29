@@ -1,4 +1,4 @@
-// File: /home/juliofreitas/devController/src/app/api/ticket/route.ts
+// File: /home/julio/devController/src/app/api/ticket/route.ts
 import * as entry from '../../../../../src/app/api/ticket/route.js'
 import type { NextRequest } from 'next/server.js'
 

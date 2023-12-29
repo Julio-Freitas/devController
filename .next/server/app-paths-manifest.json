@@ -1,8 +1,12 @@
 {
-  "/page": "app/page.js",
+  "/_not-found": "app/_not-found.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/new/page": "app/dashboard/new/page.js",
+  "/api/customer/route": "app/api/customer/route.js",
+  "/api/ticket/route": "app/api/ticket/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
   "/dashboard/customer/page": "app/dashboard/customer/page.js",
-  "/dashboard/customer/new/page": "app/dashboard/customer/new/page.js"
+  "/dashboard/customer/new/page": "app/dashboard/customer/new/page.js",
+  "/dashboard/new/page": "app/dashboard/new/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
 }
