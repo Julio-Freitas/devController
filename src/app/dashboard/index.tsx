@@ -21,7 +21,7 @@ export async function Dashboard() {
   return (
     <Container>
       <main className="mt-2 mb-2">
-        <div className="flex items-center justify-between gap-6 ">
+        <div className="flex items-center justify-between gap-6">
           <h1 className="text-3xl font-bold">Chamandos</h1>
           <Link
             passHref
@@ -33,7 +33,7 @@ export async function Dashboard() {
         </div>
 
         <table className="min-w-full my-6">
-          <thead className="h-8 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <thead className="h-8 text-xs text-gray-700 uppercase  bg-gray-700">
             <tr>
               <th scope="col" className="font-medium text-left uppercase pl-2">
                 cliente
