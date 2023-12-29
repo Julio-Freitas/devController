@@ -23,7 +23,6 @@ export const ModalProvider = ({ children }: React.PropsWithChildren) => {
   const handleModalVisible = () => setVisible(!visible);
   const handleSetTicket = (datail: TicketInfo) => setTicket(datail);
 
-
   return (
     <ModalContext.Provider
       value={{ visible, handleModalVisible, ticket, handleSetTicket }}
@@ -38,7 +37,7 @@ export const useModalProvider = () => {
   const context = useContext(ModalContext);
   if (!context)
     throw new Error(
-      "useModalProvider only can be used inset <ModalProvider />"
+      "useModalProvider can only be used wrapped by a <ModalProvider />"
     );
   return context as ModalContextData;
 };
