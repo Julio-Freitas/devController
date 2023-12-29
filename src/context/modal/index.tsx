@@ -18,7 +18,7 @@ interface TicketInfo {
 export const ModalContext = createContext<ModalContextData | object>({});
 
 export const ModalProvider = ({ children }: React.PropsWithChildren) => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [ticket, setTicket] = useState<TicketInfo>();
   const handleModalVisible = () => setVisible(!visible);
   const handleSetTicket = (datail: TicketInfo) => setTicket(datail);
